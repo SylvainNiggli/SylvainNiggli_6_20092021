@@ -1,6 +1,6 @@
 const Sauce = require('../models/Sauce');
 const fs = require('fs');
-const jsonwebtoken = require('jsonwebtoken');
+
 
 exports.setOneSauce = (req,res,next) => {
     const sauceObject = JSON.parse(req.body.sauce);

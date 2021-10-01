@@ -3,8 +3,10 @@ const mongoose = require('mongoose');
 const userRoutes = require('./routes/user');
 const sauceRoutes = require('./routes/sauce');
 const path = require('path');
+const dotenv = require('dotenv');
 
-const uri = "mongodb+srv://SylvainNiggli:ngs0287a@cluster0.ebdtk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+dotenv.config();
+const uri = process.env.MONGODB_URI;
 
 const app = express();
 
